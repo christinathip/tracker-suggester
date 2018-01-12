@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("form#results").submit(function(event) {
+  $("form#output").submit(function(event) {
     event.preventDefault();
     var name = $("#name").val();
     var option1 = parseInt($("input:radio[name=option1]:checked").val());
@@ -9,30 +9,29 @@ $(document).ready(function(){
     var option5 = parseInt($("input:radio[name=option5]:checked").val());
     var option6 = parseInt($("input:radio[name=option6]:checked").val());
 
-    console.log(name);
-    console.log(option1);
-    console.log(option2);
-    console.log(option3);
-    console.log(option4);
-    console.log(option5);
-    console.log(option6);
     var optionArr = [option1, option2, option3, option4, option5];
 
-    var results = add(optionArr);
+    var results = add(optionArr, name);
+    var print = showing(results);
 
-    var print = toggle(results);
-
-      // $(this).children("#results1").show();
-      // $("dt").click(function(){
-      //   $(this).children("dd").toggle();
-      // });
     $("#name").val('');
   });
 });
 
-var toggle = function(output){
-  $(output).click(function(){
-    $(this).children("dd").toggle();
+var showing = function(results, name){
+  $("p#name").text(name);
+  $("p#name").show();
+  $(results).show(function(){
+    $(results).click(function(){
+      $(this).children("h2").show();
+      $(this).children("dt").show();
+      $("dt").click(function(){
+        $("#"+results+"more").show();
+      });
+      $("dt").click(function(){
+        $("#"+results+"more").hide();
+      });
+    });
   });
 }
 
