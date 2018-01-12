@@ -9,94 +9,136 @@
     <title>Tracker Suggester</title>
   </head>
   <body>
-    <div class="container">
+    <div class="jumbotron">
       <h1>Tracker Suggester</h1>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <form id="name">
+          <form id="results">
             <div class="form-group">
               <label for="name">Name:</label>
               <input id="name" class="form-control" type="text">
             </div>
-          </form>
-          <form id="option1">
-            <p>Do you use your left or right brain more?</p>
-            <div class="radio">
-            <label>
-              <input type="radio" name="brain" value="right brain" checked>
-              Right Brain
-            </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="brain" value="left brain">
-                Left Brain
-              </label>
-            </div>
-          </form>
-          <form id="option2">
-            <p>Do you like designing/styling websites?</p>
-            <div class="radio">
-              <label>
-                <input type="radio" name="design" value="yes">
-                Yes
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="design" value="no">
-                No
-              </label>
-            </div>
-          </form>
-          <form id="option3">
-            <p>Do you like puzzles and problem-solving?</p>
-            <div class="radio">
-              <label>
-                <input type="radio" name="puzzle" value="yes">
-                Yes
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="puzzle" value="no">
-                No
-              </label>
-            </div>
-          </form>
-          <form id="option4">
-            <p>Do like creating apps?</p>
-            <div class="radio">
-              <label>
-                <input type="radio" name="apps" value="yes">
-                Yes
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="apps" value="no">
-                No
-              </label>
-            </div>
-          </form>
-          <form id="option5">
-            <p>Do you care more about what you see(aesthetics) or how something works?</p>
-            <div class="radio">
-              <label>
-                <input type="radio" name="care" value="see">
-                What you see (aesthetics)
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="care" value="works">
-                How something works
-              </label>
-            </div>
-          </form>
-          <button type="submit" id="btn">Enter</button>
+              <div class="form-group">
+                <p>Do you use your left or right brain more?</p>
+                <div class="radio">
+                <label>
+                  <input type="radio" name="option1" value="1">
+                  Right Brain
+                </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="option1" value="2">
+                    Left Brain
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <p>Do you like designing/styling websites?</p>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="option2" value="1">
+                    Yes
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="option2" value="2">
+                    No
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <p>Do you like puzzles and problem-solving?</p>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="option3" value="2">
+                    Yes
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="option3" value="1">
+                    No
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <p>Do like creating apps?</p>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="option4" value="2">
+                    Yes
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="option4" value="1">
+                    No
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <p>Do you care more about what you see(aesthetics) or how something works?</p>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="option5" value="1">
+                    What you see (aesthetics)
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="option5" value="2">
+                    How something works
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <p>Do you want to work for a big company or a start-up?</p>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="option6" value="2">
+                    Big Company
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="option6" value="1">
+                    Start-up
+                  </label>
+                </div>
+              </div>
+              <button type="submit" id="btn">Enter</button>
+            </form>
+          </div>
+
+        <div class="col-md-12" id="results1">
+          <h2></h2>
+          <h2>Front End</h2>
+            <dl>
+              <dt>HTML & CSS</dt>
+              <dd>HTML (Hyper Text Markup Language) and CSS (Cascading Style Sheets) are the most basic building blocks of web coding. Without these two things, you can’t create a website design, and all you’ll end up with is unformatted plain text on the screen. You can’t even add images to a page without HTML!</dd>
+              <dd>Before you get started on any web development career path, you’ll have to master coding with HTML and CSS. The good news is that getting a solid working knowledge of either of these can be done in just a few weeks.</dd>
+              <dd>The best part: HTML and CSS knowledge alone will let you build basic websites</dd>
+              <dt>JavaScipt</dt>
+              <dd>JavaScript lets you add a ton more functionality to your websites. You can even create a lot of basic web applications using nothing more than HTML, CSS, and JavaScript (JS for short). On the most basic level, JS lets you add a lot of interactive elements to your websites. Use it to create things like maps that update in real time, interactive films, and online games. Sites like Pinterest use JavaScript heavily to make their user interface so easy to use (the fact that the page doesn’t reload whenever you pin something is thanks to JavaScript!).</dd>
+            </dl>
+        </div>
+        <div class="col-md-12" id="results2">
+          <h2>Backend</h2>
+            <dl>
+              <dt>C#</dt>
+              <dd>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</dd>
+              <dt>Java</dt>
+              <dd>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</dd>
+              <dt>PHP</dt>
+              <dd>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</dd>
+              <dt>Ruby</dt>
+              <dd>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</dd>
+              <dd>Though each language has its niche, there is plenty of crossover. For example, Rails' popularity inspired copycats in just about every language, and so you'll see interactive web applications written in C#, Java, and PHP, with Rails-like frameworks including .NET MVC, Spring, and Laravel. Even at one company, you might find them using PHP for their marketing site, Ruby for their web application, and Java for their back-end processing. </dd>
+            </dl>
         </div>
       </div>
     </div>
