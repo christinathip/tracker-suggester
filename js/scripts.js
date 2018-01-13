@@ -24,12 +24,12 @@ var showing = function(results, name){
   $(results).show(function(){
     $(results).click(function(){
       $(this).children("h2").show();
-      $(this).children("dt").show();
-      $("dt").click(function(){
-        $("#"+results+"more").show();
+      $(this).children("btn btn-info").show();
+      $(".btn-info").click(function(){
+        $(this).children("#more").show();
       });
-      $("dt").click(function(){
-        $("#"+results+"more").hide();
+      $(".btn-info").click(function(){
+        $(this).children("#more").hide();
       });
     });
   });
